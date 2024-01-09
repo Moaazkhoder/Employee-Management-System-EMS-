@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.M.S</title>
+    <link rel="stylesheet" href="style.css" >
+
+    <style>
+    </style>
+</head>
+<body>
+
+<div class="crud">
+<div class="head">
+<h2>S.M.S</h2>
+<P>Staff management system</P>
+
+</div>
+<div class="inputs">
+<input  onclick="getTotal()" onkeyup="getTotal()"type="number" id="sal" placeholder="salary per hour">
+<input onclick="getTotal()" onkeyup="getTotal()" type="number" id="mworkinghours" placeholder="Number of monthly working hours">
+<input placeholder="Name" type="text" id="Name" >
+<div class="price">
+<input onclick="getTotal()" onkeyup="getTotal()" type="number" id="DoublePaid" placeholder="Double Paid Days">
+<input onclick="getTotal()" onkeyup="getTotal()" type="datetime" id="DoublePaidDate" placeholder="Double Paid date and Time">
+<input onclick="getTotal()" onkeyup="getTotal()" type="number" id="MissingDays" placeholder="Days Off">
+<input onclick="getTotal()" onkeyup="getTotal()" type="datetime" id="DaysOffDate" placeholder="Days Off date and Time">
+<input onclick="getTotal()" onkeyup="getTotal()"type="number" id="ExtraHours" placeholder="Extra Hours">
+<input onclick="getTotal()" onkeyup="getTotal()"type="datetime" id="ExtraHoursDate" placeholder="Extra Hours Date and Time">
+<input onclick="getTotal()" onkeyup="getTotal()"type="number" id="MissingMinuts" placeholder="Missing Minuts">
+<input onclick="getTotal()" onkeyup="getTotal()"type="datetime" id="MissingMinutsDate" placeholder="Missing Minuts Date and Time">
+<input onclick="getTotal()" onkeyup="getTotal()"type="number" id="MissingHours" placeholder=" Missing Hours">
+<input onclick="getTotal()" onkeyup="getTotal()" type="datetime" id="MissingHoursDate" placeholder="Missing Hours date and Time">
+<input onclick="getTotal()" onkeyup="getTotal()"type="number" id="ExtraMinuts" placeholder="Extra Minuts">
+<input onclick="getTotal()" onkeyup="getTotal()"type="datetime" id="ExtraMinutsDate" placeholder="Extra Minuts Date and Time">
+<small  id="Result"></small>
+<small id="TSalary"></small>
+
+</div>
+    <button id="submit">Create</button>
+</div> 
+
+
+<div class="outputs">
+
+<!--<div class="searchBlock">
+    <input type="text" id="search" placeholder="Search">
+    <div class="btnSearch">
+        <button id="searchTitle">Search by Title</button>
+        <button id="searchTCategory">Search by Category</button>
+    </div>-->
+</div>
+<div id="deleteAll"></div>
+<table>
+    <tr>
+               <th>id</th> 
+                <th>name</th>
+                <th>Salary per hour</th>
+                <th>Monthly Hours</th>
+                <th>Douple paid</th>
+                <th>Date</th>
+                <th>Days Off</th>
+                <th>date</th>
+                <th>Missing Hours</th>
+                 <th>date</th>
+                <th>Missing Minuts</th>
+                <th>date</th>
+                <th>Extra Hours</th>
+                <th>date</th>
+                <th>Extra Minuts</th>
+                <th>date</th>
+                <th>Total of Salary</th> 
+                 <th>update</th> 
+                  <th>delete</th>
+    </tr>
+    <tbody id="tbody">
+
+    </tbody>
+  
+</table>
+
+
+</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
